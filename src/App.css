@@ -1,22 +1,88 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  min-height: 65vh;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 20px 0;
 }
 
-.App-link {
-  color: #09d3ac;
+.App-header h1 {
+  font-size: 72px;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.App-header p {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+@media only screen and (min-width: 992px) {
+  .App-header p {
+    padding-right: 50%;
+  }
+}
+
+.App-header button {
+  background-color: white;
+  color: #282c34;
+  padding: 16px 24px;
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 4px;
+}
+
+.App-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  z-index: 1;
+}
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.col-6 {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media only screen and (min-width: 992px) {
+  .col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+.feature-grid {
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  width: 100%;
+}
+.feature-grid li {
+  flex: 0 1 25%;
+  display: flex;
+}
+
+.feature-grid .feature {
+  padding-left: 15px;
+  padding-right: 15px;
 }
